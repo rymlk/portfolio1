@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import { CModal } from "@coreui/react";
 import Image from "next/image";
@@ -38,7 +40,7 @@ export default function Texte({ setVisible }) {
   const addLineInTerm = (element) => {
     setTerminalLineData([...terminalLineData, element]);
   };
-  const listCommands = createCommands({ setVisible });
+  const listCommands = createCommands(setVisible);
   console.log(listCommands);
   return (
     <div className={styles.container}>
