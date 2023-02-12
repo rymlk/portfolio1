@@ -1,5 +1,5 @@
-/* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-key */
 import Head from "next/head";
 import { CModal } from "@coreui/react";
 import Image from "next/image";
@@ -12,7 +12,8 @@ import { resolveHref } from "next/dist/shared/lib/router/router";
 function showModalInfo(setVisible) {
   setVisible(true);
 }
-function createCommands({ setVisible, addLineInTerm }) {
+
+function createCommands({ setVisible }) {
   return {
     info: () => {
       showModalInfo(setVisible);
@@ -37,11 +38,8 @@ export default function Texte({ setVisible }) {
     </TerminalOutput>,
   ]);
 
-  const addLineInTerm = (element) => {
-    setTerminalLineData([...terminalLineData, element]);
-  };
-  const listCommands = createCommands(setVisible);
-  console.log(listCommands);
+  const listCommands = createCommands({ setVisible });
+
   return (
     <div className={styles.container}>
       <Terminal
@@ -50,10 +48,11 @@ export default function Texte({ setVisible }) {
         onInput={(terminalInput) => {
           let result = checkCommand(listCommands, terminalInput);
 
-          if (result == "command not found") {
-            addLineInTerm(
-              <TerminalOutput>Commande non trouvée 🤔</TerminalOutput>
-            );
+          if (result === "command not found") {
+            setTerminalLineData([
+              ...terminalLineData,
+              <TerminalOutput>Commande non trouvée 🤔</TerminalOutput>,
+            ]);
           } else {
             result();
           }
