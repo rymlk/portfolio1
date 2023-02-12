@@ -8,6 +8,7 @@ import {
 } from "@coreui/react";
 
 import { useState } from "react";
+
 import React from "react";
 
 export function ModalInfo({ show, setVisible }) {
