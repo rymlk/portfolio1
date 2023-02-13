@@ -16,14 +16,14 @@
   animation: expand 0.8s ease forwards;
 }
 
-@media only screen and (max-device-width: 1170px) {
+@media only screen and (max-width: 390px) {
   .photo1 {
     justify-content: center;
     z-index: -10;
-    width: 80%;
+    width: 200%;
     height: 70%;
-    margin-top: 5%;
-    margin-left: 12%;
+    margin-top: -15%;
+    margin-left: 0%;
     cursor: none;
     transition: all 1s;
   }
