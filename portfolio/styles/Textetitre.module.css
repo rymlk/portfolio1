@@ -98,7 +98,7 @@
 
 /* iphone 13 pro */
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (max-width: 1170px) {
   .separateur {
     margin-top: 110%;
     display: flex;
