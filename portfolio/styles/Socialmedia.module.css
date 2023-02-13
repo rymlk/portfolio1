@@ -77,3 +77,26 @@
   transform: scale3d(1.05, 1.05, 1.05);
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.644));
 }
+
+@media only screen and (max-width: 390px) {
+  .allsocials {
+    transform: scale(0.6);
+  }
+  .allsocials {
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 14%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}

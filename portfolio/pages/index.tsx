@@ -85,8 +85,7 @@ export default function Home() {
           <Socialmedia />
         </div>
         <div className={styles.groupefooter}>
-          <div className={styles.footer}>portfolio by MALKI Rayane</div>
-          <div className={styles.footer2}>© 2023</div>
+          <div className={styles.footer}>portfolio by MALKI Rayane © 2023</div>
         </div>
       </div>
     </div>
