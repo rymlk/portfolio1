@@ -54,7 +54,9 @@ export default function Home() {
           <div>
             <Tel />
             <span className={styles.titre10}>Code Camp #1</span> <p />{" "}
-            <span className={styles.titre11}>Projet Mentor Goal</span>
+            <span className={styles.titre11}>
+              Projet <br className={styles.separateur2} /> Mentor Goal
+            </span>
           </div>
         </div>
         <div className={styles.projet2}>

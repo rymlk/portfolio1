@@ -27,4 +27,8 @@
     cursor: none;
     transition: all 1s;
   }
+  .photo1:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    filter: drop-shadow(0 0 0.75rem rgba(131, 0, 207, 0.644));
+  }
 }
