@@ -10,7 +10,7 @@ export default function Profile() {
     <div>
       <div>
         <img className={styles.photo1} src="profile-test.png" alt="" />
-        <img className={styles.memoji1} src="memoji-2.png" alt="" />
+        <img className={styles.memoji1} src="mem-3.png" alt="" />
       </div>
     </div>
   );

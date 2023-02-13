@@ -25,9 +25,8 @@
     display: none;
   }
   .memoji1 {
-    display: flex;
-    transform: scale(2);
-    margin-top: 100%;
-    margin-left: 47.5%;
+    display: block;
+    width: 200%;
+    margin-top: 5%;
   }
 }
