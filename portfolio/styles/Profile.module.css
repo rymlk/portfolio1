@@ -16,19 +16,18 @@
   animation: expand 0.8s ease forwards;
 }
 
+.memoji1 {
+  display: none;
+}
+
 @media only screen and (max-width: 390px) {
   .photo1 {
-    justify-content: center;
-    z-index: -10;
-    width: 200%;
-    height: 70%;
-    margin-top: -15%;
-    margin-left: 0%;
-    cursor: none;
-    transition: all 1s;
+    display: none;
   }
-  .photo1:hover {
-    transform: scale3d(1.05, 1.05, 1.05);
-    filter: drop-shadow(0 0 0.75rem rgba(131, 0, 207, 0.644));
+  .memoji1 {
+    display: flex;
+    transform: scale(2);
+    margin-top: 100%;
+    margin-left: 47.5%;
   }
 }
