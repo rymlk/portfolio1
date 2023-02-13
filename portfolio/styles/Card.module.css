@@ -81,6 +81,20 @@
     width: 100%;
     margin-top: 20%;
     margin-left: 4%;
+    zoom: 1;
+  }
+
+  .container:hover {
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 4%;
+    zoom: 1;
+  }
+  .terminalsize2 {
+    zoom: 1;
+  }
+  .terminalsize2:hover {
+    zoom: 1;
   }
   .projet1pc {
     display: absolute;
