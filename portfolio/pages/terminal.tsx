@@ -29,13 +29,16 @@ function checkCommand(listCommands, command) {
 
 export default function Texte({ setVisible }) {
   const [terminalLineData, setTerminalLineData] = React.useState([
-    <TerminalOutput>
-      Bienvenue sur mon portfolio <span className={styles.emoji}>🖐️</span> !
-      <br />
-      Tape "<span className={styles.infotexte}>info</span>" pour obtenir plus
-      d'informations sur moi.
-      <br />
-    </TerminalOutput>,
+    <div className={styles.terminalsize2}>
+      <TerminalOutput>
+        Bienvenue sur mon portfolio <span className={styles.emoji}>🖐️</span> !
+        <br />
+        Tape "<span className={styles.infotexte}>info</span>" pour obtenir plus
+        d'informations sur moi.
+        <br />
+      </TerminalOutput>
+      ,
+    </div>,
   ]);
 
   const listCommands = createCommands({ setVisible });

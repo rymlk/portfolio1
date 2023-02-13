@@ -5,3 +5,8 @@
 .infotexte {
   color: yellow;
 }
+
+/* iphone 13 pro */
+
+@media only screen and (max-device-width: 1170px) {
+}

@@ -102,3 +102,36 @@
   transition: all 1s;
   margin-left: 19%;
 }
+
+@media only screen and (max-device-width: 1170px) {
+  .forme1 {
+    display: none;
+  }
+  .forme2 {
+    display: none;
+  }
+  .forme3 {
+    display: none;
+  }
+  .forme4 {
+    display: none;
+  }
+  .forme5 {
+    display: none;
+  }
+  .forme6 {
+    display: none;
+  }
+  .forme7 {
+    display: none;
+  }
+  .forme8 {
+    display: none;
+  }
+  .forme9 {
+    display: none;
+  }
+  .forme10 {
+    display: none;
+  }
+}
