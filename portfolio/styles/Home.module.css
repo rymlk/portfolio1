@@ -312,6 +312,25 @@
 /* iphone 13 pro */
 
 @media only screen and (max-width: 390px) {
+  .banner1 {
+    margin-top: 10%;
+    display: flex;
+    width: 48em;
+    height: 100%;
+  }
+
+  .banner2 {
+    margin-top: 10%;
+    display: flex;
+    width: 48em;
+    height: 100%;
+  }
+  .banner3 {
+    margin-top: 10%;
+    display: flex;
+    width: 48em;
+    height: 100%;
+  }
   .separateur2 {
     display: flex;
   }
@@ -321,21 +340,10 @@
   }
 
   .titre5 {
-    display: block;
-    color: rgb(0, 0, 0);
-    font-size: 200%;
-    transform: scale(1.7);
-    width: 100%;
-    text-align: center;
-    margin-left: 60%;
-    margin-top: 25%;
-    font-family: Mulish;
-    font-weight: 700;
-    cursor: none;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
+    display: none;
+  }
+  .titre6 {
+    display: none;
   }
   .titre15 {
     display: block;
@@ -373,42 +381,9 @@
     text-align: center;
   }
 
-  .titre6 {
-    display: block;
-    color: rgb(0, 0, 0);
-    font-size: 200%;
-    transform: scale(1.7);
-    width: 100%;
-    text-align: center;
-    margin-left: 50%;
-    margin-top: 25%;
-    font-family: Mulish;
-    font-weight: 700;
-    cursor: none;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-  }
-
   .titre7 {
-    display: block;
-    color: rgb(0, 0, 0);
-    font-size: 200%;
-    transform: scale(1.7);
-    width: 100%;
-    text-align: center;
-    margin-left: 50%;
-    margin-top: 25%;
-    font-family: Mulish;
-    font-weight: 700;
-    cursor: none;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
+    display: none;
   }
-
   .titre11 {
     display: block;
     text-align: center;

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
@@ -45,6 +46,7 @@ export default function Home() {
           <Terminal setVisible={(val) => setVisible(val)} />
         </div>
         <div>
+          <img className={styles.banner1} src="banner-1.png" alt="" />
           <div className={styles.titre5}>Mes projets</div>
         </div>
         <div className={styles.projet1}>
@@ -71,6 +73,7 @@ export default function Home() {
             <span className={styles.titre13}>Projet GomuShop</span>
           </div>
         </div>
+        <img className={styles.banner2} src="banner-2.png" alt="" />
         <div className={styles.titre6}>Mes compétences</div>
         <div className={styles.cardslide1}>
           <Slider />
@@ -79,6 +82,8 @@ export default function Home() {
           <Slider2 />
         </div>
         <div>
+          <img className={styles.banner3} src="banner-3.png" alt="" />
+
           <div className={styles.titre7}>Me contacter</div>
         </div>
         <div>
