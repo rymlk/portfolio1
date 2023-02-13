@@ -82,4 +82,10 @@
     margin-top: 20%;
     margin-left: 4%;
   }
+  .projet1pc {
+    display: absolute;
+    margin-top: 20%;
+    margin-left: 0%;
+    width: 100%;
+  }
 }

@@ -37,7 +37,6 @@ export default function Texte({ setVisible }) {
         d'informations sur moi.
         <br />
       </TerminalOutput>
-      ,
     </div>,
   ]);
 
