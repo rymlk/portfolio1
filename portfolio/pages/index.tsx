@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.modaaal}>
-          <ModalInfo2 show={visible} setVisible={setVisible} />
+          <ModalInfo2 />
         </div>
         <div className={styles.terminalsize}>
           <Terminal setVisible={(val) => setVisible(val)} />
