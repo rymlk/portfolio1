@@ -17,7 +17,7 @@ import Pc2 from "./pc2";
 import Slider from "./slider";
 import Slider2 from "./slider2";
 import Socialmedia from "./socialmedia";
-import { ModalInfo2 } from "../components/modal2";
+import { ModalInfo6 } from "../components/modal2";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -40,8 +40,12 @@ export default function Home() {
             <Textetitre />
           </div>
         </div>
-        <div className={styles.modaaal}>
-          <ModalInfo2 />
+        <div>
+          <img className={styles.banner4} src="banner-4.png" alt="" />
+
+          <div className={styles.modaaal}>
+            <ModalInfo6 />
+          </div>
         </div>
         <div className={styles.terminalsize}>
           <Terminal setVisible={(val) => setVisible(val)} />

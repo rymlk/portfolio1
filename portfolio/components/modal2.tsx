@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   CModal,
   CButton,
@@ -7,57 +8,70 @@ import {
   CModalBody,
 } from "@coreui/react";
 import { useState } from "react";
-
 import React from "react";
 
-export function ModalInfo2() {
+export function ModalInfo6() {
   const [visible, setVisible] = useState(false);
   return (
     <>
-      <CButton onClick={() => setVisible(!visible)}>
-        Vertically centered scrollable modal
+      <CButton color="info" onClick={() => setVisible(!visible)}>
+        Clique juste ici 👨‍💻{" "}
       </CButton>
       <CModal
+        backdrop={false}
         alignment="center"
         scrollable
         visible={visible}
         onClose={() => setVisible(false)}
       >
         <CModalHeader>
-          <CModalTitle>Modal title</CModalTitle>
+          <CModalTitle>Bienvenue sur mon portfolio 🖐️</CModalTitle>
         </CModalHeader>
         <CModalBody>
           <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
+            👨‍🎓 • Actuellement en année préparatoire à l'<strong>ETNA</strong> et
+            à la recherche d'une <strong>alternance</strong> pour{" "}
+            <strong>Mars 2023</strong> et dans le but d'obtenir un Master of
+            Science 1&2 Architecte logiciel, développeur d'application web et
+            mobile.
           </p>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor.
+            📖 • Passionné par le web et les nouvelles technologies depuis
+            petit, je suis actuellement à la recherche d'une{" "}
+            <strong>alternance</strong> afin de parfaire ma formation de{" "}
+            <strong>développeur d'application web et mobile</strong>. Je suis en
+            outre dynamique, curieux, sociable et doté d'une grande capacité
+            d'adaptation et de communication.
           </p>
           <p>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-            dui. Donec ullamcorper nulla non metus auctor fringilla.
+            👨‍💻 • Je maîtrise <strong>HTML</strong>, <strong>CSS</strong>,{" "}
+            <strong>PHP</strong>, <strong>TYPESCRIPT</strong> &{" "}
+            <strong>JAVASCRIPT</strong>, <strong>REACT</strong>,{" "}
+            <strong>NEXT</strong>, <strong>NODEJS</strong>, <strong>GIT</strong>
+            , <strong>SQL</strong> & <strong>MARIADB</strong>.
           </p>
           <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
+            D'ailleurs, je possède aussi de très nombreuses connaissances en{" "}
+            <strong>PHOTOSHOP</strong>, <strong>AFTER EFFECT</strong> et sur
+            <strong> SONY VEGAS PRO</strong>.
           </p>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor.
+            👇🏼 • Vous avez la possibilité d'accéder à mon CV en cliquant sur le
+            bouton juste en-dessous.
           </p>
         </CModalBody>
         <CModalFooter>
-          <CButton color="secondary" onClick={() => setVisible(false)}>
-            Close
+          <CButton color="danger" onClick={() => setVisible(false)}>
+            Fermer ❌
           </CButton>
-          <CButton color="primary">Save changes</CButton>
+          <CButton
+            href="cvmalkirayane.pdf"
+            download="CV-MALKI-Rayane.pdf"
+            color="success"
+            onClick={() => setVisible(false)}
+          >
+            Mon CV 📃
+          </CButton>
         </CModalFooter>
       </CModal>
     </>
