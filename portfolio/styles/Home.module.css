@@ -437,6 +437,7 @@
   }
 
   .terminalsize {
+    zoom: 1;
     position: flex;
     display: flex;
     margin-top: 0%;
