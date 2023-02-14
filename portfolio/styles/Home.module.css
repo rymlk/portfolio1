@@ -312,6 +312,13 @@
 /* iphone 13 pro */
 
 @media only screen and (max-width: 390px) {
+  .projet1 {
+    display: none;
+  }
+  .projet2 {
+    display: none;
+  }
+
   .banner1 {
     margin-top: 10%;
     display: flex;
