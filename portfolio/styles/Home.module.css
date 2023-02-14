@@ -312,6 +312,9 @@
 /* iphone 13 pro */
 
 @media only screen and (max-width: 390px) {
+  .testjuste {
+    display: none;
+  }
   .projet1 {
     display: none;
   }

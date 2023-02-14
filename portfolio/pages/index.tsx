@@ -45,6 +45,7 @@ export default function Home() {
         <div className={styles.terminalsize}>
           <Terminal setVisible={(val) => setVisible(val)} />
         </div>
+        <div className={styles.testjuste}>
         <div>
           <img className={styles.banner1} src="banner-1.png" alt="" />
           <div className={styles.titre5}>Mes projets</div>
@@ -92,6 +93,7 @@ export default function Home() {
         <div className={styles.groupefooter}>
           <div className={styles.footer}>portfolio by MALKI Rayane © 2023</div>
         </div>
+      </div>
       </div>
     </div>
   );
