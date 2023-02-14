@@ -17,15 +17,13 @@ import Pc2 from "./pc2";
 import Slider from "./slider";
 import Slider2 from "./slider2";
 import Socialmedia from "./socialmedia";
+import { ModalInfo2 } from "../components/modal2";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
 
   return (
     <div>
-      <ModalInfo show={visible} setVisible={setVisible} />
-
-      <ModalInfo show={visible} setVisible={setVisible} />
       <Head>
         <title>Malki Rayane • Mon Portfolio 📃</title>
         <link rel="icon" href="/favicon.icon" />
@@ -42,58 +40,63 @@ export default function Home() {
             <Textetitre />
           </div>
         </div>
+        <div className={styles.modaaal}>
+          <ModalInfo2 show={visible} setVisible={setVisible} />
+        </div>
         <div className={styles.terminalsize}>
           <Terminal setVisible={(val) => setVisible(val)} />
         </div>
         <div className={styles.testjuste}>
-        <div>
-          <img className={styles.banner1} src="banner-1.png" alt="" />
-          <div className={styles.titre5}>Mes projets</div>
-        </div>
-        <div className={styles.projet1}>
           <div>
-            <Card />
+            <img className={styles.banner1} src="banner-1.png" alt="" />
+            <div className={styles.titre5}>Mes projets</div>
+          </div>
+          <div className={styles.projet1}>
+            <div>
+              <Card />
+            </div>
+            <div>
+              <Tel />
+              <span className={styles.titre10}>Code Camp #1</span> <p />{" "}
+              <span className={styles.titre11}>
+                Projet <br className={styles.separateur2} /> Mentor Goal
+              </span>
+            </div>
+          </div>
+          <div className={styles.projet2}>
+            <div>
+              <Pc2 />
+            </div>
+            <div>
+              <Tel2 />
+            </div>
+            <div className={styles.groupetexte1}>
+              <span className={styles.titre12}>MyWebsite</span> <p />{" "}
+              <span className={styles.titre13}>Projet GomuShop</span>
+            </div>
+          </div>
+          <img className={styles.banner2} src="banner-2.png" alt="" />
+          <div className={styles.titre6}>Mes compétences</div>
+          <div className={styles.cardslide1}>
+            <Slider />
+          </div>
+          <div className={styles.cardslide2}>
+            <Slider2 />
           </div>
           <div>
-            <Tel />
-            <span className={styles.titre10}>Code Camp #1</span> <p />{" "}
-            <span className={styles.titre11}>
-              Projet <br className={styles.separateur2} /> Mentor Goal
-            </span>
-          </div>
-        </div>
-        <div className={styles.projet2}>
-          <div>
-            <Pc2 />
-          </div>
-          <div>
-            <Tel2 />
-          </div>
-          <div className={styles.groupetexte1}>
-            <span className={styles.titre12}>MyWebsite</span> <p />{" "}
-            <span className={styles.titre13}>Projet GomuShop</span>
-          </div>
-        </div>
-        <img className={styles.banner2} src="banner-2.png" alt="" />
-        <div className={styles.titre6}>Mes compétences</div>
-        <div className={styles.cardslide1}>
-          <Slider />
-        </div>
-        <div className={styles.cardslide2}>
-          <Slider2 />
-        </div>
-        <div>
-          <img className={styles.banner3} src="banner-3.png" alt="" />
+            <img className={styles.banner3} src="banner-3.png" alt="" />
 
-          <div className={styles.titre7}>Me contacter</div>
+            <div className={styles.titre7}>Me contacter</div>
+          </div>
+          <div>
+            <Socialmedia />
+          </div>
+          <div className={styles.groupefooter}>
+            <div className={styles.footer}>
+              portfolio by MALKI Rayane © 2023
+            </div>
+          </div>
         </div>
-        <div>
-          <Socialmedia />
-        </div>
-        <div className={styles.groupefooter}>
-          <div className={styles.footer}>portfolio by MALKI Rayane © 2023</div>
-        </div>
-      </div>
       </div>
     </div>
   );
