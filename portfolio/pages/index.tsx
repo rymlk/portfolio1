@@ -81,6 +81,12 @@ export default function Home() {
           </div>
           <img className={styles.banner2} src="banner-2.png" alt="" />
           <div className={styles.titre6}>Mes compétences</div>
+          <div>
+            <img className={styles.cardlittle1} src="card-1.png" alt="" />
+          </div>
+          <div>
+            <img className={styles.cardxl1} src="cardxl-1.png" alt="" />
+          </div>
           <div className={styles.cardslide1}>
             <Slider />
           </div>
