@@ -18,6 +18,7 @@ import Slider from "./slider";
 import Slider2 from "./slider2";
 import Socialmedia from "./socialmedia";
 import { ModalInfo6 } from "../components/modal2";
+import MyComponent from "../components/modal3";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -42,9 +43,8 @@ export default function Home() {
         </div>
         <div>
           <img className={styles.banner4} src="banner-4.png" alt="" />
-
-          <div className={styles.modaaal}>
-            <ModalInfo6 />
+          <div className={styles.modalzeb}>
+            <MyComponent />
           </div>
         </div>
         <div className={styles.terminalsize}>

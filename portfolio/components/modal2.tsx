@@ -18,7 +18,6 @@ export function ModalInfo6() {
         Clique juste ici 👨‍💻{" "}
       </CButton>
       <CModal
-        backdrop={true}
         alignment="center"
         scrollable
         visible={visible}

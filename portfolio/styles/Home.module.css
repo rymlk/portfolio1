@@ -312,8 +312,8 @@
 /* iphone 13 pro */
 
 @media only screen and (max-width: 390px) {
-  .modaaal {
-    transform: scale(1.5);
+  .modalzeb {
+    transform: scale(1);
     display: flex;
     margin-top: 30%;
     margin-left: 89%;
