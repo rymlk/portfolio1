@@ -23,9 +23,14 @@ import MyComponent from "../components/modal3";
 import DividerStack from "../components/modal4";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <div>
@@ -40,7 +45,14 @@ export default function Home() {
       <div>
         <div></div>
         <Deco />
-        <Profile />
+        <div data-aos="zoom-in-up">
+          <Profile />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div className={styles.titre1}>Bonjour, je suis Rayane</div>
         <div className={styles.titre15}>
           Bonjour, je m'appelle Rayane et je suis
@@ -50,18 +62,48 @@ export default function Home() {
             <Textetitre />
           </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div>
-          <img className={styles.banner4} src="banner-4.png" alt="" />
-          <div className={styles.modalzeb}>
+          <img
+            className={styles.banner4}
+            data-aos="fade-right"
+            src="banner-4.png"
+            alt=""
+          />
+          <div className={styles.modalzeb} data-aos="zoom-in-down">
             <MyComponent />
           </div>
         </div>
         <div className={styles.terminalsize}>
           <Terminal setVisible={(val) => setVisible(val)} />
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
         <div className={styles.testjuste}>
           <div>
-            <img className={styles.banner1} src="banner-1.png" alt="" />
+            <img
+              className={styles.banner1}
+              data-aos="fade-left"
+              src="banner-1.png"
+              alt=""
+            />
             <div className={styles.titre5}>Mes projets</div>
           </div>
           <div className={styles.projet1}>
@@ -87,23 +129,31 @@ export default function Home() {
               <span className={styles.titre12}>MyWebsite</span> <p />{" "}
               <span className={styles.titre13}>Projet GomuShop</span>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
-          <img className={styles.banner2} src="banner-2.png" alt="" />
+          <img
+            className={styles.banner2}
+            data-aos="fade-right"
+            src="banner-2.png"
+            alt=""
+          />
           <div className={styles.titre6}>Mes compétences</div>
           <div className={styles.frontend}>
             <img
               className={styles.frontendcard}
-              data-aos="fade"
-              data-aos-duration="1000"
-              data-aos-delay="500"
+              data-aos="fade-up-right"
+              data-aos-anchor-placement="top-bottom"
               src="front-end-card.png"
               alt=""
             />
             <img
               className={styles.cardfull1}
-              data-aos="fade"
-              data-aos-duration="1000"
-              data-aos-delay="500"
+              data-aos="fade-up-right"
               src="cardxl-full1.png"
               alt=""
             />
@@ -111,17 +161,32 @@ export default function Home() {
           <div className={styles.backend}>
             <img
               className={styles.backendcard}
-              data-aos="fade"
-              data-aos-duration="1000"
-              data-aos-delay="500"
+              data-aos="fade-up-left"
+              data-aos-anchor-placement="top-bottom"
               src="back-end-card.png"
               alt=""
             />
-            <img className={styles.cardfull2} src="cardxl-full2.png" alt="" />
+            <img
+              className={styles.cardfull2}
+              data-aos="fade-up-left"
+              src="cardxl-full2.png"
+              alt=""
+            />
           </div>
           <div className={styles.design}>
-            <img className={styles.designcard} src="design-card.png" alt="" />
-            <img className={styles.cardfull2} src="cardxl-full3.png" alt="" />
+            <img
+              className={styles.designcard}
+              data-aos="fade-up-right"
+              data-aos-anchor-placement="top-bottom"
+              src="design-card.png"
+              alt=""
+            />
+            <img
+              className={styles.cardfull3}
+              data-aos="fade-up-right"
+              src="cardxl-full3.png"
+              alt=""
+            />
           </div>
           <div className={styles.separateur3}></div>
           <div className={styles.cardslide1}>
@@ -130,12 +195,23 @@ export default function Home() {
           <div className={styles.cardslide2}>
             <Slider2 />
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <div>
-            <img className={styles.banner3} src="banner-3.png" alt="" />
+            <img
+              className={styles.banner3}
+              data-aos="fade-left"
+              src="banner-3.png"
+              alt=""
+            />
 
             <div className={styles.titre7}>Me contacter</div>
           </div>
-          <div>
+          <div data-aos="flip-down">
             <Socialmedia />
           </div>
           <div className={styles.groupefooter}>
@@ -145,8 +221,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>AOS.init();</script>
     </div>
   );
 }
