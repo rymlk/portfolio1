@@ -19,6 +19,7 @@ import Slider2 from "./slider2";
 import Socialmedia from "./socialmedia";
 import { ModalInfo6 } from "../components/modal2";
 import MyComponent from "../components/modal3";
+import DividerStack from "../components/modal4";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -81,12 +82,48 @@ export default function Home() {
           </div>
           <img className={styles.banner2} src="banner-2.png" alt="" />
           <div className={styles.titre6}>Mes compétences</div>
+
           <div>
             <img className={styles.cardlittle1} src="card-1.png" alt="" />
           </div>
           <div>
             <img className={styles.cardxl1} src="cardxl-1.png" alt="" />
           </div>
+          <div>
+            <img className={styles.htmlcard} src="html-card.png" alt="" />
+            <img className={styles.csscard} src="css-card.png" alt="" />
+            <img className={styles.nextcard} src="next-card.png" alt="" />
+            <img className={styles.reactcard} src="react-card.png" alt="" />
+            <img
+              className={styles.bootstrapcard}
+              src="bootstrap-card.png"
+              alt=""
+            />
+            <img className={styles.jscard} src="js-card.png" alt="" />
+          </div>
+          <div>
+            <div>
+              <img className={styles.cardlittle2} src="back-end.png" alt="" />
+            </div>
+            <div>
+              <img className={styles.cardxl2} src="cardxl-1.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <img
+                  className={styles.cardlittle3}
+                  src="designer-card.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img className={styles.cardxl3} src="cardxl-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div className={styles.separateur3}></div>
           <div className={styles.cardslide1}>
             <Slider />
           </div>
