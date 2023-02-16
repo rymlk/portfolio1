@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
@@ -20,6 +21,8 @@ import Socialmedia from "./socialmedia";
 import { ModalInfo6 } from "../components/modal2";
 import MyComponent from "../components/modal3";
 import DividerStack from "../components/modal4";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -29,8 +32,13 @@ export default function Home() {
       <Head>
         <title>Malki Rayane • Mon Portfolio 📃</title>
         <link rel="icon" href="/favicon.icon" />
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        ></link>
       </Head>
       <div>
+        <div></div>
         <Deco />
         <Profile />
         <div className={styles.titre1}>Bonjour, je suis Rayane</div>
@@ -82,46 +90,38 @@ export default function Home() {
           </div>
           <img className={styles.banner2} src="banner-2.png" alt="" />
           <div className={styles.titre6}>Mes compétences</div>
-
-          <div>
-            <img className={styles.cardlittle1} src="card-1.png" alt="" />
-          </div>
-          <div>
-            <img className={styles.cardxl1} src="cardxl-1.png" alt="" />
-          </div>
-          <div>
-            <img className={styles.htmlcard} src="html-card.png" alt="" />
-            <img className={styles.csscard} src="css-card.png" alt="" />
-            <img className={styles.nextcard} src="next-card.png" alt="" />
-            <img className={styles.reactcard} src="react-card.png" alt="" />
+          <div className={styles.frontend}>
             <img
-              className={styles.bootstrapcard}
-              src="bootstrap-card.png"
+              className={styles.frontendcard}
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              src="front-end-card.png"
               alt=""
             />
-            <img className={styles.jscard} src="js-card.png" alt="" />
+            <img
+              className={styles.cardfull1}
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              src="cardxl-full1.png"
+              alt=""
+            />
           </div>
-          <div>
-            <div>
-              <img className={styles.cardlittle2} src="back-end.png" alt="" />
-            </div>
-            <div>
-              <img className={styles.cardxl2} src="cardxl-1.png" alt="" />
-            </div>
+          <div className={styles.backend}>
+            <img
+              className={styles.backendcard}
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+              src="back-end-card.png"
+              alt=""
+            />
+            <img className={styles.cardfull2} src="cardxl-full2.png" alt="" />
           </div>
-          <div>
-            <div>
-              <div>
-                <img
-                  className={styles.cardlittle3}
-                  src="designer-card.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img className={styles.cardxl3} src="cardxl-1.png" alt="" />
-              </div>
-            </div>
+          <div className={styles.design}>
+            <img className={styles.designcard} src="design-card.png" alt="" />
+            <img className={styles.cardfull2} src="cardxl-full3.png" alt="" />
           </div>
           <div className={styles.separateur3}></div>
           <div className={styles.cardslide1}>
@@ -145,6 +145,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();</script>
     </div>
   );
 }
