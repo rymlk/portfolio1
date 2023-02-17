@@ -69,12 +69,6 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div>
           <img
             className={styles.banner4}
@@ -95,6 +89,7 @@ export default function Home() {
         <br />
         <br />
         <br />
+        <br />
 
         <div className={styles.testjuste}>
           <div>
@@ -106,7 +101,7 @@ export default function Home() {
             />
             <div className={styles.titre5}>Mes projets</div>
           </div>
-          <div className={styles.projet1}>
+          <div className={styles.projet1} data-aos="fade-right">
             <div>
               <Card />
             </div>
@@ -118,7 +113,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className={styles.projet2}>
+          <div className={styles.projet2} data-aos="fade-left">
             <div>
               <Pc2 />
             </div>
@@ -129,6 +124,7 @@ export default function Home() {
               <span className={styles.titre12}>MyWebsite</span> <p />{" "}
               <span className={styles.titre13}>Projet GomuShop</span>
             </div>
+            <br />
             <br />
             <br />
             <br />
