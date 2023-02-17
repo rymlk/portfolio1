@@ -76,7 +76,12 @@ export default function Home() {
         <br />
         <br />
         <div>
-          <img className={styles.banner4} src="banner-4.png" alt="" />
+          <img
+            className={styles.banner4}
+            data-aos="zoom-in"
+            src="banner-4.png"
+            alt=""
+          />
           <div className={styles.modalzeb} data-aos="zoom-in-down">
             <MyComponent />
           </div>
@@ -93,7 +98,12 @@ export default function Home() {
 
         <div className={styles.testjuste}>
           <div>
-            <img className={styles.banner1} src="banner-1.png" alt="" />
+            <img
+              className={styles.banner1}
+              data-aos="zoom-in"
+              src="banner-1.png"
+              alt=""
+            />
             <div className={styles.titre5}>Mes projets</div>
           </div>
           <div className={styles.projet1}>
@@ -126,7 +136,12 @@ export default function Home() {
             <br />
             <br />
           </div>
-          <img className={styles.banner2} src="banner-2.png" alt="" />
+          <img
+            className={styles.banner2}
+            data-aos="zoom-in"
+            src="banner-2.png"
+            alt=""
+          />
           <div className={styles.titre6}>Mes compétences</div>
           <div className={styles.frontend}>
             <img
@@ -187,7 +202,12 @@ export default function Home() {
           <br />
           <br />
           <div>
-            <img className={styles.banner3} src="banner-3.png" alt="" />
+            <img
+              className={styles.banner3}
+              data-aos="zoom-in"
+              src="banner-3.png"
+              alt=""
+            />
 
             <div className={styles.titre7}>Me contacter</div>
           </div>
