@@ -76,7 +76,7 @@ export default function Home() {
             src="banner-4.png"
             alt=""
           />
-          <div className={styles.modalzeb} data-aos="zoom-in-down">
+          <div className={styles.modalzeb}>
             <MyComponent />
           </div>
         </div>
@@ -101,24 +101,26 @@ export default function Home() {
             />
             <div className={styles.titre5}>Mes projets</div>
           </div>
-          <div className={styles.projet1} data-aos="fade-right">
-            <div>
-              <Card />
+          <div data-aos="zoom-in">
+            <div className={styles.projet1}>
+              <div>
+                <Card />
+              </div>
+              <div>
+                <Tel />
+                <span className={styles.titre10}>Code Camp #1</span> <p />{" "}
+                <span className={styles.titre11}>
+                  Projet <br className={styles.separateur2} /> Mentor Goal
+                </span>
+              </div>
             </div>
-            <div>
-              <Tel />
-              <span className={styles.titre10}>Code Camp #1</span> <p />{" "}
-              <span className={styles.titre11}>
-                Projet <br className={styles.separateur2} /> Mentor Goal
-              </span>
-            </div>
-          </div>
-          <div className={styles.projet2} data-aos="fade-left">
-            <div>
-              <Pc2 />
-            </div>
-            <div>
-              <Tel2 />
+            <div className={styles.projet2}>
+              <div>
+                <Pc2 />
+              </div>
+              <div>
+                <Tel2 />
+              </div>
             </div>
             <div className={styles.groupetexte1}>
               <span className={styles.titre12}>MyWebsite</span> <p />{" "}

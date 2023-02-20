@@ -11,3 +11,21 @@
     width: 85%;
   }
 }
+
+/* 375 pixel */
+@media only screen and (max-width: 375px) {
+  .projet2pc {
+    margin-top: -205.7%;
+    margin-left: 110%;
+    width: 85%;
+  }
+}
+
+/* 320 pixel */
+@media only screen and (max-width: 320px) {
+  .projet2pc {
+    margin-top: -203.7%;
+    margin-left: 110%;
+    width: 85%;
+  }
+}

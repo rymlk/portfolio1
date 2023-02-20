@@ -6,6 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import styles from "../styles/Home.module.css";
 
 const bull = (
   <Box
@@ -59,6 +60,7 @@ export default function BasicCard() {
             <strong>PHOTOSHOP</strong>, <strong>AFTER EFFECT</strong> et sur
             <strong> SONY VEGAS PRO</strong>.
           </p>
+          <br />
           <p>
             👇🏼 • Vous avez la possibilité d'accéder à mon CV en cliquant sur le
             bouton juste en-dessous.
@@ -67,9 +69,10 @@ export default function BasicCard() {
       </CardContent>
       <CardActions>
         <Button
+          className={styles.buttonlarge1}
           href="cvmalkirayane.pdf"
           download="CV-MALKI-Rayane.pdf"
-          size="small"
+          size="large"
         >
           MON CV 📃
         </Button>
