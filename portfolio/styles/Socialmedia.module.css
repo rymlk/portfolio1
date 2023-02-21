@@ -78,6 +78,33 @@
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.644));
 }
 
+/* 1920 pixels */
+
+@media only screen and (max-width: 1920px) {
+  .allsocials {
+    transform: scale(1);
+  }
+  .allsocials {
+    flex-direction: row;
+    transform: scale(0.8);
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}
+
 /* 1440 pixels */
 
 @media only screen and (max-width: 1440px) {

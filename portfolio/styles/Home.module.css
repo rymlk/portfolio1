@@ -12,14 +12,6 @@
   margin-top: -20%;
 }
 
-@media only screen and (max-device-width: 1170px) {
-  .terminalsize {
-    margin-top: -10%;
-    font-size: 150%;
-    width: 100vw;
-  }
-}
-
 .titre2 {
   color: rgb(0, 0, 0);
   margin-top: -22%;
@@ -139,10 +131,6 @@
   margin-left: 68%;
   font-family: Mulish;
   font-weight: 700;
-}
-
-.titre15 {
-  display: none;
 }
 
 .titre11:hover {
@@ -307,6 +295,245 @@
 
 .separateur2 {
   display: none;
+}
+
+/* 1920 pixel */
+
+@media only screen and (max-width: 1920px) {
+  .frontendcard {
+    z-index: 110000;
+    position: relative;
+    width: 25%;
+    margin-left: 37%;
+    animation: wave 5s ease-in-out infinite;
+  }
+  .cardfull1 {
+    display: flex;
+    width: 40%;
+    margin-left: 29.5%;
+    margin-top: -5%;
+    z-index: -100000;
+  }
+  .backendcard {
+    z-index: 110000;
+    position: relative;
+    width: 25%;
+    margin-left: 37%;
+    animation: wave 5s ease-in-out infinite;
+  }
+  .cardfull2 {
+    display: flex;
+    width: 40%;
+    margin-left: 29.5%;
+    margin-top: -5%;
+    z-index: -100000;
+  }
+  .designcard {
+    z-index: 110000;
+    position: relative;
+    width: 25%;
+    margin-left: 37%;
+    animation: wave 5s ease-in-out infinite;
+  }
+  @keyframes wave {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.15, 1.15);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .cardfull3 {
+    display: flex;
+    width: 40%;
+    margin-left: 29.5%;
+    margin-top: -5%;
+    z-index: -100000;
+  }
+  .separateur3 {
+    display: flex;
+    margin-top: 35%;
+  }
+  .stack1 {
+    transform: scale(1.1);
+    z-index: 100000;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 105%;
+    margin-top: -60%;
+  }
+
+  .modalzeb {
+    transform: scale(1);
+    display: flex;
+    margin-top: 2.5%;
+    margin-left: 32.5%;
+    font-family: Mulish;
+    font-weight: 700;
+    width: 40em;
+  }
+
+  .banner1 {
+    margin-top: 0%;
+    margin-left: 27.5%;
+    display: flex;
+    width: 50em;
+    height: 100%;
+  }
+
+  .banner2 {
+    margin-top: 0%;
+    margin-left: 27.5%;
+    display: flex;
+    width: 50em;
+    height: 100%;
+  }
+  .banner3 {
+    margin-top: -30%;
+    margin-left: 27.5%;
+    display: flex;
+    width: 50em;
+    height: 100%;
+  }
+
+  .banner4 {
+    margin-top: 0%;
+    margin-left: 27.5%;
+    display: flex;
+    width: 50em;
+    height: 100%;
+  }
+  .separateur2 {
+    display: flex;
+  }
+
+  .titre1 {
+    display: none;
+  }
+
+  .titre5 {
+    display: none;
+  }
+  .titre6 {
+    display: none;
+  }
+  .titre15 {
+    text-overflow: ellipsis;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 1000%;
+    transform: scale(0.35);
+    width: 100%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: -64%;
+    font-family: Mulish;
+    font-weight: 700;
+    cursor: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .titre10 {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    transform: scale(1.1);
+    width: 100%;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 13%;
+    font-family: Mulish;
+    font-weight: 700;
+    cursor: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .titre7 {
+    display: none;
+  }
+  .titre11 {
+    display: block;
+    text-align: center;
+    cursor: default;
+    color: #334e66;
+    font-size: 200%;
+    font-family: Mulish;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  .titre12 {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    transform: scale(1.1);
+    width: 100%;
+    text-align: center;
+    margin-left: 95%;
+    margin-top: -48.8%;
+    font-family: Mulish;
+    font-weight: 700;
+    cursor: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  .titre13 {
+    cursor: default;
+    color: #334e66;
+    font-size: 200%;
+    font-family: Mulish;
+    font-weight: 700;
+    margin-left: 120%;
+    margin-top: -0%;
+    display: flex;
+  }
+
+  .terminalsize {
+    zoom: 1;
+    position: flex;
+    display: none;
+    margin-top: 0%;
+    width: 193%;
+    height: 100%;
+  }
+
+  .cardslide1 {
+    display: none;
+  }
+  .cardslide2 {
+    display: none;
+  }
+
+  .footer {
+    transform: scale(0.8);
+    display: block;
+    top: 0;
+    margin-left: 40%;
+    width: 50%;
+    height: 50%;
+  }
+  .buttonlarge1 {
+    display: flex;
+    background-color: rgba(0, 162, 255, 0.5);
+    font-family: Mulish;
+    margin-left: 2%;
+    border-radius: 15px 15px 15px 15px;
+  }
 }
 
 /* 1440 pixel */
@@ -1483,7 +1710,7 @@
     display: absolute;
     transform: scale(1.5);
     top: 0;
-    margin-left: 75%;
+    padding-left: 20%;
     width: 100%;
     height: 100%;
   }

@@ -22,6 +22,21 @@
   display: none;
 }
 
+/*1920 pixel*/
+
+@media only screen and (max-width: 1920px) {
+  .photo1 {
+    display: none;
+  }
+  .memoji1 {
+    display: block;
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 5%;
+    animation: wave 5s ease-in-out infinite;
+  }
+}
+
 /*1440 pixel*/
 
 @media only screen and (max-width: 1440px) {

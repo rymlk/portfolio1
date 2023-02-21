@@ -103,7 +103,7 @@
   margin-left: 19%;
 }
 
-@media only screen and (max-device-width: 1440px) {
+@media only screen and (max-device-width: 1920px) {
   .forme1 {
     display: none;
   }
