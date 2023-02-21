@@ -76,6 +76,38 @@
   width: 35%;
 }
 
+/* 425 pixel */
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 4%;
+    zoom: 1;
+  }
+
+  .container:hover {
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 4%;
+    zoom: 1;
+  }
+  .terminalsize2 {
+    zoom: 1;
+  }
+  .terminalsize2:hover {
+    zoom: 1;
+  }
+  .projet1pc {
+    display: absolute;
+    margin-top: 20%;
+    margin-left: 5%;
+    width: 85%;
+  }
+}
+
+/* 390 pixel */
+
 @media only screen and (max-width: 390px) {
   .container {
     width: 100%;

@@ -78,6 +78,111 @@
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.644));
 }
 
+/* 1440 pixels */
+
+@media only screen and (max-width: 1440px) {
+  .allsocials {
+    transform: scale(1);
+  }
+  .allsocials {
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}
+
+/* 1024 pixels */
+
+@media only screen and (max-width: 1024px) {
+  .allsocials {
+    transform: scale(0.9);
+  }
+  .allsocials {
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}
+
+/* 768 pixels */
+
+@media only screen and (max-width: 768px) {
+  .allsocials {
+    transform: scale(0.9);
+  }
+  .allsocials {
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}
+
+/* 425 pixels */
+
+@media only screen and (max-width: 425px) {
+  .allsocials {
+    transform: scale(0.7);
+  }
+  .allsocials {
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 14%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}
+
+/* 390 pixels */
+
 @media only screen and (max-width: 390px) {
   .allsocials {
     transform: scale(0.6);
@@ -86,6 +191,31 @@
     flex-direction: row;
     margin-top: 10%;
     margin-left: 14%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc5 {
+    margin-left: -15%;
+  }
+  .bloc7 {
+    margin-left: 15%;
+  }
+}
+
+/* 320 pixels */
+
+@media only screen and (max-width: 320px) {
+  .allsocials {
+    transform: scale(0.6);
+  }
+  .allsocials {
+    flex-direction: row;
+    margin-top: 10%;
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
   }

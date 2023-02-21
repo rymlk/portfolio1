@@ -22,6 +22,90 @@
   display: none;
 }
 
+/*1440 pixel*/
+
+@media only screen and (max-width: 1440px) {
+  .photo1 {
+    display: none;
+  }
+  .memoji1 {
+    display: block;
+    width: 80%;
+    margin-top: 5%;
+    animation: wave 5s ease-in-out infinite;
+  }
+}
+
+/*1024 pixel*/
+
+@media only screen and (max-width: 1024px) {
+  .photo1 {
+    display: none;
+  }
+  .memoji1 {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: -10%;
+    animation: wave 5s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+/*768 pixel*/
+
+@media only screen and (max-width: 768px) {
+  .photo1 {
+    display: none;
+  }
+  .memoji1 {
+    display: block;
+    width: 125%;
+    margin-top: 5%;
+    margin-left: -10%;
+    animation: wave 5s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+/*425 pixel*/
+
+@media only screen and (max-width: 425px) {
+  .photo1 {
+    display: none;
+  }
+  .memoji1 {
+    display: block;
+    width: 200%;
+    margin-top: 5%;
+    animation: wave 5s ease-in-out infinite;
+  }
+}
+
 /*390 pixel*/
 
 @media only screen and (max-width: 390px) {
@@ -60,7 +144,7 @@
   .memoji1 {
     display: block;
     width: 200%;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 5%;
     animation: wave 5s ease-in-out infinite;
   }

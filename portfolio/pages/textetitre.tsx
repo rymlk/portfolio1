@@ -12,7 +12,7 @@ export default function Textetitre() {
       <div className={styles.blocentier}>
         <div>
           <main className={styles.container}>
-            <p className={styles.textn1}>Je suis</p>
+            <p className={styles.textn1}></p>
             <section className={styles.animation}>
               <div className={styles.first}>
                 <div className={styles.textn2}>étudiant à l'ETNA</div>

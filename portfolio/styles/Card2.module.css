@@ -73,6 +73,50 @@
   }
 }
 
+/* 425 pixel */
+@media only screen and (max-width: 425px) {
+  .projet1tel {
+    cursor: none;
+    z-index: 1000000;
+    width: 12.5%;
+    margin-top: -20.5%;
+    margin-left: 10.5%;
+    animation: scale2 5s ease-in-out infinite;
+  }
+  .projet2tel {
+    cursor: none;
+    z-index: 1000000;
+    width: 12.5%;
+    margin-top: -145.2%;
+    margin-left: 115.4%;
+    animation: scale 5s ease-in-out infinite;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scale2 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
 /* 375 pixel */
 @media only screen and (max-width: 375px) {
   .projet1tel {

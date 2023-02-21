@@ -4,6 +4,17 @@
   width: 35%;
 }
 
+/* 425 pixel */
+@media only screen and (max-width: 425px) {
+  .projet2pc {
+    margin-top: -169.5%;
+    margin-left: 110%;
+    width: 84%;
+  }
+}
+
+/* 390 pixels*/
+
 @media only screen and (max-width: 390px) {
   .projet2pc {
     margin-top: -200.7%;
